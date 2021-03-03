@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="battleship-style.css">
+    <link rel="shortcut icon" href="battleship-assets/brodic.ico">
+    <script language="JavaScript" src="battleship-script.js"></script>
+</head>
+
+<body onload="createTable()">
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='col-sm-12 header'>
+                <h1>BATTLESHIP GAME</h1>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-sm-3 background spusti'>
+                <p class="igraci"></p>
+            </div>
+            <div class='col-sm-6 central littleform'>
+                <table class="noselect" border="1">
+                    <tr>
+                        <td class="empty"><img src="battleship-assets/brodic.ico"></td>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>D</th>
+                        <th>E</th>
+                        <th>F</th>
+                        <th>G</th>
+                        <th>H</th>
+                        <th>I</th>
+                        <th>J</th>
+                    </tr>
+                    <tr>
+                        <th class="empty">1</th>
+                        <td onmousedown="mouseDown(0)" onmouseup="mouseUp(0)" id="0"></td>
+                        <td onmousedown="mouseDown(1)" onmouseup="mouseUp(1)" id="1"></td>
+                        <td onmousedown="mouseDown(2)" onmouseup="mouseUp(2)" id="2"></td>
+                        <td onmousedown="mouseDown(3)" onmouseup="mouseUp(3)" id="3"></td>
+                        <td onmousedown="mouseDown(4)" onmouseup="mouseUp(4)" id="4"></td>
+                        <td onmousedown="mouseDown(5)" onmouseup="mouseUp(5)" id="5"></td>
+                        <td onmousedown="mouseDown(6)" onmouseup="mouseUp(6)" id="6"></td>
+                        <td onmousedown="mouseDown(7)" onmouseup="mouseUp(7)" id="7"></td>
+                        <td onmousedown="mouseDown(8)" onmouseup="mouseUp(8)" id="8"></td>
+                        <td onmousedown="mouseDown(9)" onmouseup="mouseUp(9)" id="9"></td>
+                    </tr>
+                    <tr>
+                        <th class="empty">2</th>
+                        <td onmousedown="mouseDown(10)" onmouseup="mouseUp(10)" id="10"></td>
+                        <td onmousedown="mouseDown(11)" onmouseup="mouseUp(11)" id="11"></td>
+                        <td onmousedown="mouseDown(12)" onmouseup="mouseUp(12)" id="12"></td>
+                        <td onmousedown="mouseDown(13)" onmouseup="mouseUp(13)" id="13"></td>
+                        <td onmousedown="mouseDown(14)" onmouseup="mouseUp(14)" id="14"></td>
+                        <td onmousedown="mouseDown(15)" onmouseup="mouseUp(15)" id="15"></td>
+                        <td onmousedown="mouseDown(16)" onmouseup="mouseUp(16)" id="16"></td>
+                        <td onmousedown="mouseDown(17)" onmouseup="mouseUp(17)" id="17"></td>
+                        <td onmousedown="mouseDown(18)" onmouseup="mouseUp(18)" id="18"></td>
+                        <td onmousedown="mouseDown(19)" onmouseup="mouseUp(19)" id="19"></td>
+                    </tr>
+                    <tr>
+                        <th class="empty">3</th>
+                        <td onmousedown="mouseDown(20)" onmouseup="mouseUp(20)" id="20"></td>
+                        <td onmousedown="mouseDown(21)" onmouseup="mouseUp(21)" id="21"></td>
+                        <td onmousedown="mouseDown(22)" onmouseup="mouseUp(22)" id="22"></td>
+                        <td onmousedown="mouseDown(23)" onmouseup="mouseUp(23)" id="23"></td>
+                        <td onmousedown="mouseDown(24)" onmouseup="mouseUp(24)" id="24"></td>
+                        <td onmousedown="mouseDown(25)" onmouseup="mouseUp(25)" id="25"></td>
+                        <td onmousedown="mouseDown(26)" onmouseup="mouseUp(26)" id="26"></td>
+                        <td onmousedown="mouseDown(27)" onmouseup="mouseUp(27)" id="27"></td>
+                        <td onmousedown="mouseDown(28)" onmouseup="mouseUp(28)" id="28"></td>
+                        <td onmousedown="mouseDown(29)" onmouseup="mouseUp(29)" id="29"></td>
+                    </tr>
+                    <tr>
+                        <th class="empty">4</th>
+                        <td onmousedown="mouseDown(30)" onmouseup="mouseUp(30)" id="30"></td>
+                        <td onmousedown="mouseDown(31)" onmouseup="mouseUp(31)" id="31"></td>
+                        <td onmousedown="mouseDown(32)" onmouseup="mouseUp(32)" id="32"></td>
+                        <td onmousedown="mouseDown(33)" onmouseup="mouseUp(33)" id="33"></td>
+                        <td onmousedown="mouseDown(34)" onmouseup="mouseUp(34)" id="34"></td>
+                        <td onmousedown="mouseDown(35)" onmouseup="mouseUp(35)" id="35"></td>
+                        <td onmousedown="mouseDown(36)" onmouseup="mouseUp(36)" id="36"></td>
+                        <td onmousedown="mouseDown(37)" onmouseup="mouseUp(37)" id="37"></td>
+                        <td onmousedown="mouseDown(38)" onmouseup="mouseUp(38)" id="38"></td>
+                        <td onmousedown="mouseDown(39)" onmouseup="mouseUp(39)" id="39"></td>
+                    </tr>
+                    <tr>
+                        <th class="empty">5</th>
+                        <td onmousedown="mouseDown(40)" onmouseup="mouseUp(40)" id="40"></td>
+                        <td onmousedown="mouseDown(41)" onmouseup="mouseUp(41)" id="41"></td>
+                        <td onmousedown="mouseDown(42)" onmouseup="mouseUp(42)" id="42"></td>
+                        <td onmousedown="mouseDown(43)" onmouseup="mouseUp(43)" id="43"></td>
+                        <td onmousedown="mouseDown(44)" onmouseup="mouseUp(44)" id="44"></td>
+                        <td onmousedown="mouseDown(45)" onmouseup="mouseUp(45)" id="45"></td>
+                        <td onmousedown="mouseDown(46)" onmouseup="mouseUp(46)" id="46"></td>
+                        <td onmousedown="mouseDown(47)" onmouseup="mouseUp(47)" id="47"></td>
+                        <td onmousedown="mouseDown(48)" onmouseup="mouseUp(48)" id="48"></td>
+                        <td onmousedown="mouseDown(49)" onmouseup="mouseUp(49)" id="49"></td>
+                    </tr>
+                    <tr>
+                        <th class="empty">6</th>
+                        <td onmousedown="mouseDown(50)" onmouseup="mouseUp(50)" id="50"></td>
+                        <td onmousedown="mouseDown(51)" onmouseup="mouseUp(51)" id="51"></td>
+                        <td onmousedown="mouseDown(52)" onmouseup="mouseUp(52)" id="52"></td>
+                        <td onmousedown="mouseDown(53)" onmouseup="mouseUp(53)" id="53"></td>
+                        <td onmousedown="mouseDown(54)" onmouseup="mouseUp(54)" id="54"></td>
+                        <td onmousedown="mouseDown(55)" onmouseup="mouseUp(55)" id="55"></td>
+                        <td onmousedown="mouseDown(56)" onmouseup="mouseUp(56)" id="56"></td>
+                        <td onmousedown="mouseDown(57)" onmouseup="mouseUp(57)" id="57"></td>
+                        <td onmousedown="mouseDown(58)" onmouseup="mouseUp(58)" id="58"></td>
+                        <td onmousedown="mouseDown(59)" onmouseup="mouseUp(59)" id="59"></td>
+                    </tr>
+                    <tr>
+                        <th class="empty">7</th>
+                        <td onmousedown="mouseDown(60)" onmouseup="mouseUp(60)" id="60"></td>
+                        <td onmousedown="mouseDown(61)" onmouseup="mouseUp(61)" id="61"></td>
+                        <td onmousedown="mouseDown(62)" onmouseup="mouseUp(62)" id="62"></td>
+                        <td onmousedown="mouseDown(63)" onmouseup="mouseUp(63)" id="63"></td>
+                        <td onmousedown="mouseDown(64)" onmouseup="mouseUp(64)" id="64"></td>
+                        <td onmousedown="mouseDown(65)" onmouseup="mouseUp(65)" id="65"></td>
+                        <td onmousedown="mouseDown(66)" onmouseup="mouseUp(66)" id="66"></td>
+                        <td onmousedown="mouseDown(67)" onmouseup="mouseUp(67)" id="67"></td>
+                        <td onmousedown="mouseDown(68)" onmouseup="mouseUp(68)" id="68"></td>
+                        <td onmousedown="mouseDown(69)" onmouseup="mouseUp(69)" id="69"></td>
+                    </tr>
+                    <tr>
+                        <th class="empty">8</th>
+                        <td onmousedown="mouseDown(70)" onmouseup="mouseUp(70)" id="70"></td>
+                        <td onmousedown="mouseDown(71)" onmouseup="mouseUp(71)" id="71"></td>
+                        <td onmousedown="mouseDown(72)" onmouseup="mouseUp(72)" id="72"></td>
+                        <td onmousedown="mouseDown(73)" onmouseup="mouseUp(73)" id="73"></td>
+                        <td onmousedown="mouseDown(74)" onmouseup="mouseUp(74)" id="74"></td>
+                        <td onmousedown="mouseDown(75)" onmouseup="mouseUp(75)" id="75"></td>
+                        <td onmousedown="mouseDown(76)" onmouseup="mouseUp(76)" id="76"></td>
+                        <td onmousedown="mouseDown(77)" onmouseup="mouseUp(77)" id="77"></td>
+                        <td onmousedown="mouseDown(78)" onmouseup="mouseUp(78)" id="78"></td>
+                        <td onmousedown="mouseDown(79)" onmouseup="mouseUp(79)" id="79"></td>
+                    </tr>
+                    <tr>
+                        <th class="empty">9</th>
+                        <td onmousedown="mouseDown(80)" onmouseup="mouseUp(80)" id="80"></td>
+                        <td onmousedown="mouseDown(81)" onmouseup="mouseUp(81)" id="81"></td>
+                        <td onmousedown="mouseDown(82)" onmouseup="mouseUp(82)" id="82"></td>
+                        <td onmousedown="mouseDown(83)" onmouseup="mouseUp(83)" id="83"></td>
+                        <td onmousedown="mouseDown(84)" onmouseup="mouseUp(84)" id="84"></td>
+                        <td onmousedown="mouseDown(85)" onmouseup="mouseUp(85)" id="85"></td>
+                        <td onmousedown="mouseDown(86)" onmouseup="mouseUp(86)" id="86"></td>
+                        <td onmousedown="mouseDown(87)" onmouseup="mouseUp(87)" id="87"></td>
+                        <td onmousedown="mouseDown(88)" onmouseup="mouseUp(88)" id="88"></td>
+                        <td onmousedown="mouseDown(89)" onmouseup="mouseUp(89)" id="89"></td>
+                    </tr>
+                    <tr>
+                        <th class="empty">10</th>
+                        <td onmousedown="mouseDown(90)" onmouseup="mouseUp(90)" id="90"></td>
+                        <td onmousedown="mouseDown(91)" onmouseup="mouseUp(91)" id="91"></td>
+                        <td onmousedown="mouseDown(92)" onmouseup="mouseUp(92)" id="92"></td>
+                        <td onmousedown="mouseDown(93)" onmouseup="mouseUp(93)" id="93"></td>
+                        <td onmousedown="mouseDown(94)" onmouseup="mouseUp(94)" id="94"></td>
+                        <td onmousedown="mouseDown(95)" onmouseup="mouseUp(95)" id="95"></td>
+                        <td onmousedown="mouseDown(96)" onmouseup="mouseUp(96)" id="96"></td>
+                        <td onmousedown="mouseDown(97)" onmouseup="mouseUp(97)" id="97"></td>
+                        <td onmousedown="mouseDown(98)" onmouseup="mouseUp(98)" id="98"></td>
+                        <td onmousedown="mouseDown(99)" onmouseup="mouseUp(99)" id="99"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class='col-sm-3 background spusti'>
+                <p> Remaining ships :</p>
+                Ships of order 4
+                <p class='ships'></p>
+                Ships of order 3
+                <p class='ships'></p>
+                Ships of order 2
+                <p class='ships'></p>
+                Ships of order 1
+                <p class='ships'></p>
+                <br />
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-sm-12 footer central helper2'>
+                <a> All right reserved by Božo Labović &#174; </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

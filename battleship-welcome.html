@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="battleship-style.css">
+    <link rel="shortcut icon" href="battleship-assets/brodic.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script language="JavaScript" src="battleship-script.js"></script>
+</head>
+
+<body>
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='col-sm-12 header'>
+                <h1>BATTLESHIP GAME</h1>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-sm-4'>
+            </div>
+            <div class='col-sm-4 central littleform2 '>
+                <form name="lilform" method="POST">
+                    <i class="fa fa-user fa-2x icon"></i>
+                    <label class="levo">Player 1: </label>
+                    <label style="color: red;">*</label>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="text" name="player1" placeholder="player 1" value="">
+                    <br /> <br />
+                    <hr />
+                    <i class="fa fa-user fa-2x icon"></i>
+                    <label>Player 2: </label>
+                    <label style="color: red;">*</label>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="text" name="player2" placeholder="player 2" value="">
+                    <br /> <br />
+                    <hr />
+                    <button type="button" name="myButton" onclick="StartingGame()">Start game</button>
+                </form>
+            </div>
+            <div class='col-sm-4'>
+                &nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="row space">
+        </div>
+        <div class='row'>
+            <div class='col-sm-12 footer central'>
+                <a> All right reserved by Božo Labović &#174; </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
